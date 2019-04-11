@@ -1,3 +1,5 @@
 <?php
 
-echo "This is an index landing page";
+require 'vendor/autoload.php';
+
+require 'Messages.php';
