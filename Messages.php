@@ -27,3 +27,5 @@ echo 'feature messages 3';
 echo 'feature 58888 1';
 echo 'feature 58888 2';
 echo 'feature 58888 3';
+
+echo '100';
