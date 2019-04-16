@@ -15,3 +15,5 @@ $acme->hire(new Person('Jane Doe'));
 echo '<pre>';
 var_dump($acme->getStaffMembers());
 echo '</pre>';
+
+echo 'feature test';
