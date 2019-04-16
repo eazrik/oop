@@ -22,3 +22,4 @@ echo 'feature test 3';
 
 echo 'feature messages';
 echo 'feature messages 2';
+echo 'feature messages 3';
