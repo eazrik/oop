@@ -19,3 +19,7 @@ echo '</pre>';
 echo 'feature test';
 echo 'feature test 2';
 echo 'feature test 3';
+
+echo 'feature messages';
+echo 'feature messages 2';
+echo 'feature messages 3';
