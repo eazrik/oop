@@ -17,3 +17,4 @@ var_dump($acme->getStaffMembers());
 echo '</pre>';
 
 echo 'feature test';
+echo 'feature test 2';
