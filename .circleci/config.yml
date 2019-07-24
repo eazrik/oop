@@ -8,6 +8,9 @@ jobs:
           APP_ENV: test
     steps:
       - run:
+          command: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+          working_directory: ~/project/app
+      - run:
           name: Run CS tests
           command: vendor/bin/phpcs
       - run:
