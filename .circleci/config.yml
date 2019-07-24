@@ -12,4 +12,4 @@ jobs: # a collection of steps
       - run: sudo composer self-update
       - run:
           command: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
-      - run: ./vendor/bin/phpcs
+      - run: ~/vendor/bin/phpcs
