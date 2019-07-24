@@ -10,6 +10,7 @@ jobs: # a collection of steps
       - run: sudo apt install -y libsqlite3-dev zlib1g-dev
       - run: sudo docker-php-ext-install zip
       - run: sudo composer self-update
-      - run: vendor/bin/phpcbf
-      - run: vendor/bin/phpcs
+      - run:
+          command: composer check
+          working_directory: ~/project
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
