@@ -14,4 +14,4 @@ jobs: # a collection of steps
           command: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
           working_directory: ~/project
       - run:
-          command: vendor/bin/phpcs
+          command: ~/vendor/bin/phpcs
