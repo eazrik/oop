@@ -2,10 +2,6 @@
 
 namespace Acme;
 
-/**
- * Class Person
- * @package Acme
- */
 class Person
 {
     /**
@@ -15,6 +11,7 @@ class Person
 
     /**
      * Person constructor.
+     *
      * @param string $name Person name
      */
     public function __construct($name)
