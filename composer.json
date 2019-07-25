@@ -11,7 +11,7 @@
     "check": [
       "@cs-check"
     ],
-    "cs-check": "php vendor/bin/phpcs  --colors ./src",
-    "cs-fix": "php  vendor/bin/phpcbf --colors ./src"
+    "cs-check": "php vendor/bin/phpcs  --colors -p --standard=custom_ruleset.xml ./src",
+    "cs-fix": "php  vendor/bin/phpcbf --colors --standard=custom_ruleset.xml ./src"
   }
 }

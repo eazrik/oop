@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PSR-2 but allow closing tags and with some Doc Comment stuff added -->
+<ruleset name="CustomForThisProjectPHP Standard">
+    <description>The coding standard for This Project</description>
+    <file>lib</file>
+    <file>tests</file>
+    <arg name="basepath" value="."/>
+    <arg name="colors"/>
+    <rule ref="PSR2">
+        <exclude name="PSR2.Files.ClosingTag"/>
+        <exclude name="PSR2.Files.EndFileNewline"/>
+    </rule>
+    <!-- Include rules related to Doc Comment I want -->
+    <rule ref="Generic.Commenting.DocComment.ShortNotCapital"/>
+    <rule ref="Generic.Commenting.DocComment.SpacingBeforeTags"/>
+    <rule ref="Generic.Commenting.DocComment.TagValueIndent"/>
+    <rule ref="Generic.Commenting.DocComment.NonParamGroup"/>
+    <rule ref="PEAR.Commenting.FileComment.Missing">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.MissingPackageTag">
+        <severity>0</severity>
+    </rule>
+
+
+    <rule ref="PEAR.Commenting.FileComment.PackageTagOrder">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.MissingAuthorTag">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.InvalidAuthors">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.AuthorTagOrder">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.MissingLicenseTag">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.IncompleteLicense">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.LicenseTagOrder">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FileComment.MissingLinkTag">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.ClassComment.Missing">
+        <severity>0</severity>
+    </rule>
+    <rule ref="PEAR.Commenting.FunctionComment.Missing"/>
+    <rule ref="PEAR.Commenting.FunctionComment.MissingParamTag"/>
+    <rule ref="PEAR.Commenting.FunctionComment.MissingParamName"/>
+    <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment"/>
+    <rule ref="PEAR.Commenting.FunctionComment.MissingReturn"/>
+    <rule ref="PEAR.Commenting.FunctionComment.SpacingAfter"/>
+</ruleset>
