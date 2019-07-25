@@ -9,7 +9,7 @@ class Business
     /**
      * Business constructor.
      *
-     * @param Staff $staff staff
+     * @param Staff $staff staff it is
      */
     public function __construct(Staff $staff)
     {
