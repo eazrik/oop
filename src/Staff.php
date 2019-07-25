@@ -18,6 +18,8 @@ class Staff
 
     /**
      * @param Person $person person
+     *
+     * @return void
      */
     public function add(Person $person)
     {
