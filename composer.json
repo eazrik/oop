@@ -11,7 +11,7 @@
     "check": [
       "@cs-check"
     ],
-    "cs-check": "php vendor/bin/phpcs  --colors ./src ./tests",
-    "cs-fix": "php  vendor/bin/phpcbf --colors ./src ./tests"
+    "cs-check": "php vendor/bin/phpcs  --colors ./src",
+    "cs-fix": "php  vendor/bin/phpcbf --colors ./src"
   }
 }
