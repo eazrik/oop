@@ -11,7 +11,8 @@ jobs: # a collection of steps
       - run: sudo docker-php-ext-install zip
       - run: sudo composer self-update
       - run:
-          command: composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+          command: composer install
+          working_directory: ~/project
       - run:
           command: composer check
           working_directory: ~/project
