@@ -9,15 +9,15 @@
     "phpstan/phpstan": "^0.12.11",
     "phpunit/phpunit": "^9.0"
   },
-  "scripts": {
-    "check": [
-      "@test",
-      "@cs-check",
-      "@analyse"
-    ],
-    "cs-check": "php vendor/bin/phpcs  --colors -p --standard=custom_ruleset.xml ./src ./tests",
-    "cs-fix": "php vendor/bin/phpcbf --colors --standard=custom_ruleset.xml ./src ./tests",
-    "test": "php vendor/bin/phpunit --colors=always",
-    "analyse": "php -d memory_limit=-1 vendor/bin/phpstan analyse -l 2 -c phpstan.neon src",
-  },
+"scripts": {
+        "check": [
+            "@test",
+            "@cs-check",
+            "@analyse"
+        ],
+        "cs-check": "php vendor/bin/phpcs  --colors -p --standard=custom_ruleset.xml ./src ./tests",
+        "cs-fix": "php vendor/bin/phpcbf --colors --standard=custom_ruleset.xml ./src ./tests",
+        "test": "php vendor/bin/phpunit --colors=always",
+        "analyse": "php -d memory_limit=-1 vendor/bin/phpstan analyse -l 2 -c phpstan.neon src",
+    },
 }
