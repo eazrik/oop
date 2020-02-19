@@ -11,9 +11,13 @@
   },
   "scripts": {
     "check": [
-      "@cs-check"
+      "@test",
+      "@cs-check",
+      "@analyse"
     ],
-    "cs-check": "php vendor/bin/phpcs  --colors -p --standard=custom_ruleset.xml ./src",
-    "cs-fix": "php  vendor/bin/phpcbf --colors --standard=custom_ruleset.xml ./src"
+    "cs-check": "php vendor/bin/phpcs  --colors -p --standard=custom_ruleset.xml ./src ./tests",
+    "cs-fix": "php vendor/bin/phpcbf --colors --standard=custom_ruleset.xml ./src ./tests",
+    "test": "php vendor/bin/phpunit --colors=always",
+    "analyse": "php -d memory_limit=-1 vendor/bin/phpstan analyse -l 2 -c phpstan.neon src",
   }
 }

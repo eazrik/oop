@@ -1,0 +1,22 @@
+parameters:
+    autoload_files:
+        - tests/bootstrap.php
+
+    ignoreErrors:
+        - '#Access to an undefined property*#'
+        - '#Instantiated class Imagick not found#'
+        - '#Call to an undefined method Cake\\Database\\FunctionsBuilder::year\(\)#'
+        - '#Call to an undefined method Cake\\Datasource\\ConnectionInterface::begin\(\)#'
+        - '#Call to an undefined method Cake\\Datasource\\ConnectionInterface::commit\(\)#'
+        - '#Call to an undefined method Cake\\Datasource\\ConnectionInterface::connect\(\)#'
+        - '#Call to an undefined method Cake\\Datasource\\ConnectionInterface::rollback\(\)#'
+        - '#Call to an undefined method Cake\\ORM\\Association\\BelongsTo::lists\(\)#'
+        - '#Call to an undefined method Cake\\ORM\\Association::newEntity\(\)#'
+        - '#Call to an undefined method Cake\\ORM\\Association::patchEntity\(\)#'
+        - '#Call to an undefined method Cake\\ORM\\Association\\HasMany::newEntity\(\)#'
+        - '#Call to an undefined method object::setGetfield\(\)#'
+        - '#Call to method Imagick::*#'
+        - '#Call to method (.*) on an unknown class Imagick#'
+        - '#Call to static method customizeCodeceptionBinary\(\) on an unknown class Cake\\Codeception\\Console\\Installer#'
+
+    reportUnmatchedIgnoredErrors: false
