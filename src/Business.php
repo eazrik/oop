@@ -15,7 +15,6 @@ class Business
     {
         $this->staff = $staff;
     }
-
     /**
      * @param Person $person person
      *
