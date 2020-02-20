@@ -1,9 +1,4 @@
 {
-    "name": "cakephp/app",
-    "description": "CakePHP skeleton app",
-    "homepage": "http://cakephp.org",
-    "type": "project",
-    "license": "MIT",
     "require-dev": {
         "squizlabs/php_codesniffer": "3.*",
         "phpstan/phpstan": "^0.12.11",
